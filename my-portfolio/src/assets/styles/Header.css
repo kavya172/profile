@@ -1,0 +1,105 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Full header styling */
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #f8f9fa;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.05);
+  font-family: 'Poppins', sans-serif;
+  position: sticky;
+  top: 0;
+  z-index: 999;
+}
+
+/* Left side - stacked name */
+.header-left {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.logo-container {
+  margin-bottom: 10px;
+  line-height: 1.2;
+}
+
+.logo {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: #2c3e50;
+  letter-spacing: 2px;
+  margin-top: 4.3rem;
+}
+
+.logo-surname,
+.logo-name,
+.logo-surname-1 {
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: #6c757d;
+}
+
+/* Navigation menu */
+.header-right .nav-links {
+  list-style: none;
+  display: flex;
+  gap: 25px;
+  margin-top: 10px;
+}
+
+.nav-links li a {
+  text-decoration: none;
+  color: #343a40;
+  font-weight: 500;
+  position: relative;
+  padding-bottom: 4px;
+}
+
+.nav-links li a:hover {
+  color: #e67e22;
+  border-bottom: 2px solid #e67e22;
+}
+
+/* Right side image */
+.header-logo {
+  width: 3.5rem;
+  height: 3.5rem;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.profile-img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .portfolio-header {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
+  .header-right .nav-links {
+    flex-direction: column;
+    gap: 10px;
+    margin-top: 15px;
+  }
+
+  .header-logo {
+    margin-top: 20px;
+    width: 80px;
+    height: 80px;
+  }
+}
