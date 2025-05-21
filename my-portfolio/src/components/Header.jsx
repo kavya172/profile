@@ -5,7 +5,7 @@ import '../assets/styles/Header.css'
 const Header = () => {
   return (
     <>
-   <div className="header">
+   <div className="header" style={{ backgroundColor: 'white' }}>
   <header className="portfolio-header">
     {/* <div className="header-left"> */}
         <div className="header-logo">
@@ -28,20 +28,10 @@ const Header = () => {
         </ul>
       </nav>
     {/* </div> */}
-
   </header>
-  <div className="header__container">
-    <div className="header__container--top">
-      <h1 className="header__container--top--title">Srinivasa Kavya Yadav</h1>
-      <p className="header__container--top--subtitle">Software Engineer | Full Stack Senior Developer | Tech Enthusiast</p>
-    </div>
-    <div className="header__container--bottom">
-      <p className="header__container--bottom--text">Welcome to my portfolio! Explore my projects and skills.</p>
-    </div>
-</div>
 </div>
 
-      </>
+</>
   )
 }
 

@@ -7,12 +7,12 @@ const Body = () => {
   return (
     <>
     <div className='profile-body'>  
-    <div>
         <Header/>
+    </div>
+    <div>
        <MainContent/>
-       {/* <SideBar/> */}
     </div>
-    </div>
+       <SideBar/>
     </>
   )
 }

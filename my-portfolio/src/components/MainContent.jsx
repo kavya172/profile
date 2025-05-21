@@ -6,8 +6,7 @@ const MainContent = () => {
       <div className='main-content'>
         <div className='main-content__container'>
           <div className='main-content__container--top'>
-          </div>
-          <div className='main-content__container--bottom'>
+          
           </div>
         </div>
       <div/>
