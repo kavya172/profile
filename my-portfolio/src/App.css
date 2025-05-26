@@ -109,22 +109,21 @@
   justify-content: center;
   align-items: center;
   width: 100%;
+  margin: 0 auto; 
+  margin-left: 0px;
   /* height: 100vh; */
 }
 
-.profile-body{
-  /* margin-left:  */
+/* .profile-body{
   width: 100%;
   height:100%;
   display: flex;
   justify-content: center;
   align-items: flex-end;
-  /* margin-left: -50rem; */
   margin-top: -20rem; 
   background-color: #34495e;
   border-radius: 2rem;
-  overflow: hidden;
-  /* border: 0.02rem solid #e5e4ee;   */
+  overflow: hidden; */
 }
 .profile-pic {
   width: 150px;
@@ -145,11 +144,11 @@
   color: #2c3e50;
   margin-left: 1rem;
 }
-.profile-description{
+/* .profile-description{
   font-size: 1.2rem;
   color: #34495e;
   margin-left: 1rem;
-}
+} */
 .header-logo{
   display: flex;
   justify-content: top;
@@ -168,7 +167,7 @@
   background-color: #f8f9fa;
   box-shadow: 0 4px 12px rgba(0,0,0,0.05);
   font-family: 'Poppins', sans-serif;
-  position: ;
+  /* position: ; */
   top: 0;
   z-index: 999;
 }
@@ -328,4 +327,82 @@
 
 
 
-/*main Content */
+.main-content {
+  padding: 30px;
+  flex-grow: 1;
+  height: auto;
+  background-color: #7d7d86;
+  min-height: 100vh; /* Cover full viewport height */
+  margin-left: 0;     /* Ensure no left margin */
+  margin-right: 0;
+  margin-top: 50px;    /* Optional: no right margin */
+  position: relative; /* Needed if you had used 'right' or 'left' earlier */
+  left: 0;            /* Explicitly align to left if position is used */
+  width: calc(100% - 400px); /* Adjust width to account for sidebar */
+
+}
+
+/* MAIN LAYOUT WRAPPER */
+.main-page {
+  display: flex;
+  flex-direction: row; /* horizontal alignment */
+  width: 100%;
+  margin-top: 6rem; /* make space for sticky header */
+}
+
+/* HEADER STICKS TO TOP */
+.portfolio-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  width: 100%;
+  font-family: 'Poppins', sans-serif;
+}
+
+/* MAIN CONTENT TO THE LEFT */
+.main-content {
+  flex: 1; /* take remaining space */
+  padding: 30px;
+  background-color: #d5d5dc;
+  min-height: calc(100vh - 6rem); /* adjust for header height */
+  margin: 0;
+  position: relative;
+}
+
+/* SIDEBAR TO THE RIGHT */
+.sidebar__container {
+  width: 280px;
+  background-color: #1e1e2f;
+  color: #ffffff;
+  height: auto;
+  padding: 20px 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  box-shadow: -2px 0 10px rgba(0, 0, 0, 0.2);
+  margin: 0; /* Remove margin-left and margin-top */
+  position: relative; /* No fixed positioning */
+}
+
+.skills-section-card{
+  background-color: #ffffff;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+  margin-bottom: 20px;
+  width: 400px;
+  height: 400px;
+}
+
+/* .skills-section-card-title{
+  font-size: 1.5rem;
+  font-weight: 600;
+  color: #2c3e50;
+  margin-bottom: 10px;
+} */

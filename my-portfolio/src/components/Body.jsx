@@ -6,15 +6,17 @@ import Header from './Header'
 const Body = () => {
   return (
     <>
+    
     <div className='profile-body'>  
-        <Header/>
-    </div>
-    <div>
+       <Header/>
+    <div style={{display:'flex', flexDirection:'row', width:'100%'}}>
        <MainContent/>
-    </div>
        <SideBar/>
+    </div>
+    </div>ß
     </>
   )
 }
+
 
 export default Body
