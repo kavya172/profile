@@ -13,7 +13,14 @@ const SideBar = () => {
         </div>
         <div className="sidebar__container--top--title"></div>
           <h1 className="sidebar__container--top--title--text">Srinivasa Kavya Yadav</h1>
-          <p className="sidebar__container--top--title--subtitle">Software Engineer | Full Stack Senior Developer | Tech Enthusiast</p>
+          <p className="sidebar__container--top--title--subtitle">
+          Software Engineer | Full Stack Senior Developer | Tech Enthusiast | YouTuber | Trainer | Yoga Volunteer
+          </p>
+
+
+          <p>
+          <a href="https://www.linkedin.com/in/kavyasrinivasa/" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+          </p>
       </div>
       </div>
     </>
