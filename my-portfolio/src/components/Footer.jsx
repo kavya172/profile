@@ -1,22 +1,17 @@
-import React from 'react'
+import React from "react";
 
-const SideBar = () => {
+const Footer = () => {
   return (
-    <div>
-      <div className="sidebar"></div>
-        <div className="sidebar__logo">
-          <img src="/src/assets/kavya.jpeg" alt="Logo" />
-        </div>
-        <div className="sidebar__menu">
-          <ul>
-            <li>Home</li>
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact</li>
-          </ul>
+    <footer className="footer">
+      <div className="footer-content">
+        <h3 className="footer-name">Kavya Srinivasa</h3>
+        <p className="footer-contact">
+          📞 +91 9113658237<br />
+          ✉️ kavya618sagu@gmail.com
+        </p>
       </div>
-    </div>
-  )
-}
+    </footer>
+  );
+};
 
-export default SideBar
+export default Footer;

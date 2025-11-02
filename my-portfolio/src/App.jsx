@@ -1,19 +1,25 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import SideBar from './components/SideBar'
-import Body from './components/Body'
+// src/App.jsx
+import './App.css'; // Import the global styles
+import Experience from './components/Experience';
+import Footer from './components/Footer';
+import Header from './components/Header';
+import Hero from './components/Hero';
+import Main from './components/Main';
+import Overview from './components/Overview';
+import Projects from './components/Projects';
 
-function App() {
-
+const App = () => {
   return (
-    <>
-      <div className='main-page'>
-        <Body/>
-      </div>
-    </>
-  )
-}
+    <div className="app-container">
+    <Header/>
+    <Hero/>
+    <Overview/>
+      <Main/>
+      <Experience/>
+      <Projects/>
+      <Footer/>
+    </div>
+  );
+};
 
-export default App
+export default App;
