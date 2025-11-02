@@ -12,7 +12,8 @@
     "preview": "vite preview",
     "start": "react-scripts start",  
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "eject": "react-scripts eject",
+    "deploy": "gh-pages -d dist"
   },
   "dependencies": {
     "bootstrap": "^5.3.6",
